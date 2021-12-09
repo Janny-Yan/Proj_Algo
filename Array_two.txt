@@ -1,0 +1,39 @@
+Reverse
+
+var array = [a,b,c,d,e],
+var reverse = function (array) {
+    var arrLength = array.length;
+    for (var i = 0; i < arrLength/2; i++) {
+        var x = array[i];
+        array[i] = array[arrLength - 1 - i];
+        array[arrLength - 1 - i] = x;
+    }
+}
+
+console.log(array)
+
+Rotate
+
+
+
+Filter Range
+
+function getMax(array){
+   return Math.max.apply(null, array);
+}
+function getMin(array){
+   return Math.min.apply(null, array);
+}
+var num=[3, 5, 26, 7, 14];
+var maxNum=getArrayMax(num); //26
+var minNum=getArrayMin(num); //3
+
+i = num.length;
+while (i--> 0)
+	if num(i) > maxNum
+		then num(i).delete
+	if else num(i) < minNum
+		then num(i).delete
+console.log(num)
+
+Concat

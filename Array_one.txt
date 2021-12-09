@@ -1,0 +1,30 @@
+Push Front
+Given an array and an additional value, insert this value at the beginning of the array. Do this without using any built-in array methods.
+
+var myArr = [2,4,dog,8,2,cat],
+var x = 4,
+	i = myArr.length;
+while (i--> 0)
+	myArr[i+1] = myArr[i];
+myArr[0]=x;
+console.log(myArr)//"2,3,dog,8,2,cat,4"
+
+
+Pop Front
+Given an array, remove and return the value at the beginning of the array. Do this without using any built-in array methods except pop().
+
+var myArr = [2,4,dog,8,2,cat],
+var x = myArr[0],
+i = myArr.length;
+while (i--> 0)
+	myArr[i] = myArr[i+1];
+myArr.pop()
+console.log(x)//"2"
+
+
+Insert At
+Given an array, index, and additional value, insert the value into array at given index. Do this without using built-in array methods. You can think of pushFront(arr,val) as equivalent to insertAt(arr,0,val).
+
+var myArr = [2,4,dog,8,2,cat],
+var x = 4,
+myArr[myArr.length+1] = x
